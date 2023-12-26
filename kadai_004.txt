@@ -1,0 +1,39 @@
+PS C:\Users\shini> cd C:\Users\shini 
+
+PS C:\Users\shini> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\shini
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2023/12/26     12:05                git_challenge
+
+
+PS C:\Users\shini> cd git_challenge
+PS C:\Users\shini\git_challenge> git init
+Initialized empty Git repository in C:/Users/shini/git_challenge/.git/
+PS C:\Users\shini\git_challenge> git add "C:\Users\shini\git_challenge\hello_world.txt"
+PS C:\Users\shini\git_challenge> git add "C:\Users\shini\git_challenge"
+PS C:\Users\shini\git_challenge> git commit -m "最初のコミット"
+[main (root-commit) 50bd6ad] 最初のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+↓テキストが反映してなかったので、反映するようにして再度1回目のコミットとしています
+
+PS C:\Users\shini\git_challenge> git commit -m "最初のコミット"
+[main 4c72099] 最初のコミット
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+PS C:\Users\shini\git_challenge> git add "C:\Users\shini\git_challenge\hello_world.txt"
+PS C:\Users\shini\git_challenge> git commit -m "2回目のコミット"
+[main e1ff8e7] 2回目のコミット
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\shini\git_challenge> git log --oneline
+e1ff8e7 (HEAD -> main) 2回目のコミット
+4c72099 最初のコミット
+50bd6ad 最初のコミット
+PS C:\Users\shini\git_challenge>
+
